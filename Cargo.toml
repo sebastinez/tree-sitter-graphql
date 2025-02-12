@@ -17,10 +17,14 @@ include = [
 ]
 
 [lib]
+name = "tree_sitter_graphql"
 path = "bindings/rust/lib.rs"
 
+[dependencies.tree-sitter-language]
+version = "0.1"
+
 [dependencies]
-tree-sitter = "0.17"
+tree-sitter = "0.24"
 
 [build-dependencies]
-cc = "1.0"
+cc = "1.1"
